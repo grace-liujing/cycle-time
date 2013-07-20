@@ -1,0 +1,57 @@
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+[Bb]in/
+!build/tools/sonar-runner-1.4/bin
+[Oo]bj/
+tmp/
+deploy-tools/
+
+.sonar
+Thumbs.db
+node.exe
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+*.sln.cache
+*.sln.DotSettings.user
+
+# ReSharper is a .NET coding add-in
+_ReSharper*
+
+#package folder
+packages/**/
+
+#i18n temporary file
+src/myVisas/locale/**
+
+# system hidden file
+*.DS_Store
+
+# Code coverage result
+coverage*.xml
+src/myVisas/StaticContent/coverage/
+reports/
+repoCoverage.tmp
+results.xml
+test-results.xml
+
+/build/tools/ps-gets/
+.idea/
+commit-version.txt
+
+Gemfile.lock
+TestResults/
+dependencies/
+#regress report
+test/regression/*.html
+
+# regress screenshot
+test/regression/screenshots/**
+
+# logs
+[Ll]ogs
+
+# grunt
+/src/myVisas/dist/
+node_modules/

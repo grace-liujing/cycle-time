@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myCycle", "myCycle\myCycle.csproj", "{9C227116-6FF3-436F-8ECA-4BBAE1B76FEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "credentail", "credentail\credentail.csproj", "{52479343-6942-4F06-8763-F2F8E1F77B52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C227116-6FF3-436F-8ECA-4BBAE1B76FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C227116-6FF3-436F-8ECA-4BBAE1B76FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C227116-6FF3-436F-8ECA-4BBAE1B76FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C227116-6FF3-436F-8ECA-4BBAE1B76FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52479343-6942-4F06-8763-F2F8E1F77B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52479343-6942-4F06-8763-F2F8E1F77B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52479343-6942-4F06-8763-F2F8E1F77B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52479343-6942-4F06-8763-F2F8E1F77B52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

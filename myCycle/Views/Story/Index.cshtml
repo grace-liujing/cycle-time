@@ -1,0 +1,46 @@
+﻿@model myCycle.Models.StoryCycleModel
+@{
+    ViewBag.Title = "title";
+    var items = ((IEnumerable<KeyValuePair<string, string>>)ViewBag.ProjectNames).Select(p => new SelectListItem { Text = p.Value, Value = p.Key }).ToList();
+}
+<h2>
+    Check A Story's Cycle Time</h2>
+@using (Html.BeginForm())
+{
+    <div>
+        <div>
+            @Html.LabelFor(m => m.ProjectName)
+            @Html.DropDownListFor(m => m.ProjectName, items)
+        </div>
+        <div>
+            @Html.LabelFor(m => m.StoryNumber)
+            @Html.TextBoxFor(m => m.StoryNumber)
+        </div>
+        <div>
+            <input type="submit" value="Cycle" />
+        </div>
+    </div>
+}
+<div>
+    <ul>
+        <li>
+            @Html.LabelFor(m=>m.StoryNumber)
+            <strong>@Html.DisplayFor(m=>m.StoryNumber)</strong>        
+        </li>
+        <li>
+            @Html.LabelFor(m=>m.StoryName)
+            <strong>@Html.DisplayFor(m=>m.StoryName)</strong>        
+        </li>
+        @foreach(var piece in @Model.StatusPieces)
+        {
+            <li>
+                <label>@piece.Status</label>
+                <strong>@(string.Format("{0}minutes({1}days)",piece.Duration.ToString("0.00"),(piece.Duration/1440).ToString("0.00")))</strong>
+            </li>
+        }
+    </ul>
+        
+</div>
+
+<div>
+</div>
