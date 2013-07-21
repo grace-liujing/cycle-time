@@ -9,6 +9,7 @@ using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
 using credentail;
+using myCycle.Controllers;
 
 namespace myCycle
 {
@@ -52,6 +53,7 @@ namespace myCycle
             var containerBuilder = new ContainerBuilder();
             containerBuilder.RegisterControllers(Assembly.GetExecutingAssembly());
             containerBuilder.RegisterModule(new CredentialModule(ConfigurationManager.AppSettings["baseApiUrl"]));
+            containerBuilder.RegisterModule(new DomainModule());
             return containerBuilder.Build();
         }
     }

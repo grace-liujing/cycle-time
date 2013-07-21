@@ -20,8 +20,18 @@ namespace myCycle.Models
 
     public class StatusPiece
     {
-        public string Status { get; set; }
-        public double Duration { get; set; }
+        public StatusPiece(string status, TimeSpan span)
+        {
+            Status = status;
+            Span = span;
+        }
+
+        public string Status { get; private set; }
+        public TimeSpan Span { get; private set; }
+        public double Duration
+        {
+            get { return Span.TotalMinutes; }
+        }
     }
 
     public class StatusMoment
